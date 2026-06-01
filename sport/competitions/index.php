@@ -114,7 +114,8 @@ $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
 
   .stat-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
   .stat-card { border-radius: 20px; padding: 14px; background: linear-gradient(180deg, var(--primary-dark), var(--primary)); }
-  .stat-card-header { display: flex; align-items: center; gap: 8px; padding: 4px 4px 12px; font-weight: 700; font-size: 1rem; color: #fff; }
+  .stat-card-header { padding: 4px 4px 12px; font-weight: 700; font-size: 1rem; color: #fff; }
+  .stat-card-sub { font-weight: 400; font-size: 0.75rem; color: rgba(255,255,255,0.65); }
   .stat-card-row { display: flex; align-items: center; gap: 8px; padding: 6px 8px; background: #E8F4FD; border-radius: 10px; margin-bottom: 4px; font-size: 0.9rem; }
   .stat-card-rank { font-weight: 800; color: var(--primary); min-width: 22px; text-align: center; font-size: 0.85rem; }
   .stat-card-name { flex: 1; color: #1e293b; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -582,12 +583,12 @@ $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
             <!-- Leaderboard cards -->
             <div class="stat-cards-grid">
               <?php $cards = [
-                ['title' => 'Бомбардир', 'icon' => '🏒', 'items' => $topScorers, 'valField' => 'points', 'valLabel' => 'О'],
-                ['title' => 'Снайпер', 'icon' => '🎯', 'items' => $topSnipers, 'valField' => 'goals', 'valLabel' => 'Г'],
-                ['title' => 'Ассистент', 'icon' => '🎯', 'items' => $topAssistants, 'valField' => 'assists', 'valLabel' => 'П'],
+                ['title' => 'Бомбардир', 'sub' => 'Очки по системе "Гол+Пас"', 'items' => $topScorers, 'valField' => 'points', 'valLabel' => 'О'],
+                ['title' => 'Снайпер', 'sub' => 'Забитые голы — максимум', 'items' => $topSnipers, 'valField' => 'goals', 'valLabel' => 'Г'],
+                ['title' => 'Ассистент', 'sub' => 'Результативные передачи', 'items' => $topAssistants, 'valField' => 'assists', 'valLabel' => 'П'],
               ]; foreach ($cards as $card): ?>
               <div class="stat-card">
-                <div class="stat-card-header"><?= $card['icon'] ?> <?= $card['title'] ?></div>
+                <div class="stat-card-header"><div><?= $card['title'] ?><br><span class="stat-card-sub"><?= $card['sub'] ?></span></div></div>
                 <?php if (empty($card['items'])): ?>
                   <div class="stat-card-empty">Нет данных</div>
                 <?php else: $rnk = 0; foreach ($card['items'] as $p): $rnk++; ?>
@@ -602,11 +603,10 @@ $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
               <?php endforeach; ?>
 
               <?php
-              // First goal scorer card
               $firstGoalItems = array_slice($firstGoalList, 0, 5);
               ?>
               <div class="stat-card">
-                <div class="stat-card-header">🥇 Забивает первым</div>
+                <div class="stat-card-header"><div>Забивает первым<br><span class="stat-card-sub">Игрок, открывающий счёт в матче</span></div></div>
                 <?php if (empty($firstGoalItems)): ?>
                   <div class="stat-card-empty">Нет данных</div>
                 <?php else: $rnk = 0; foreach ($firstGoalItems as $p): $rnk++; ?>
@@ -619,9 +619,8 @@ $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
                 <?php endforeach; endif; ?>
               </div>
 
-              <!-- Defender scorer card -->
               <div class="stat-card">
-                <div class="stat-card-header">🛡 Бомбардир-защитник</div>
+                <div class="stat-card-header"><div>Бомбардир-защитник<br><span class="stat-card-sub">Очки по системе "Гол+Пас" среди защитников</span></div></div>
                 <?php if (empty($topDefScorers)): ?>
                   <div class="stat-card-empty">Нет данных</div>
                 <?php else: $rnk = 0; foreach ($topDefScorers as $p): $rnk++; ?>
@@ -634,9 +633,8 @@ $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
                 <?php endforeach; endif; ?>
               </div>
 
-              <!-- Goalie card -->
               <div class="stat-card">
-                <div class="stat-card-header">🧤 Вратарь (КН)</div>
+                <div class="stat-card-header"><div>Вратарь. Коэффициент надёжности<br><span class="stat-card-sub">60 мин × ПГ / ВНП, сыграл не менее 60 минут</span></div></div>
                 <?php if (empty($topGoalies)): ?>
                   <div class="stat-card-empty">Нет данных</div>
                 <?php else: $rnk = 0; foreach ($topGoalies as $g): $rnk++; ?>
