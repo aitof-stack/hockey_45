@@ -112,6 +112,15 @@ $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
 
 
 
+  .stat-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+  .stat-card { border-radius: 20px; padding: 14px; background: linear-gradient(180deg, var(--primary-dark), var(--primary)); }
+  .stat-card-header { display: flex; align-items: center; gap: 8px; padding: 4px 4px 12px; font-weight: 700; font-size: 1rem; color: #fff; }
+  .stat-card-row { display: flex; align-items: center; gap: 8px; padding: 6px 8px; background: #E8F4FD; border-radius: 10px; margin-bottom: 4px; font-size: 0.9rem; }
+  .stat-card-rank { font-weight: 800; color: var(--primary); min-width: 22px; text-align: center; font-size: 0.85rem; }
+  .stat-card-name { flex: 1; color: #1e293b; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .stat-card-val { font-weight: 800; color: var(--primary-dark); font-size: 1rem; min-width: 30px; text-align: center; }
+  .stat-card-club { font-size: 0.72rem; color: #64748b; }
+  .stat-card-empty { text-align: center; color: rgba(255,255,255,0.5); padding: 20px; font-size: 0.85rem; }
   </style>
 
   <main class="content">
@@ -413,6 +422,11 @@ $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
             // Aggregate player stats from protocol data
             $teamStats = [];
             $hasStats = false;
+
+            // Tournament-wide aggregates
+            $allGoalScorers = []; // first goal scorers
+            $playerNameCache = []; // clubId -> num -> name+pos
+
             foreach ($matches as $m) {
               if (empty($m['protocol'])) continue;
               $hasStats = true;
@@ -420,26 +434,57 @@ $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
                 ['side' => 'home', 'clubId' => $m['home_id']],
                 ['side' => 'away', 'clubId' => $m['away_id']],
               ];
+
+              // Track first goal of this match
+              $firstGoal = null;
+              foreach ($sides as $s) {
+                $cid = $s['clubId'];
+                if (!empty($m['protocol'][$s['side']]['goals'])) {
+                  foreach ($m['protocol'][$s['side']]['goals'] as $g) {
+                    $key = (int)($g['period'] ?? 1) . '-' . str_pad($g['time'] ?? '99:99', 5, '0', STR_PAD_LEFT);
+                    if ($firstGoal === null || $key < $firstGoal['key']) {
+                      $num = $g['scorer'] ?? '';
+                      $pname = $num;
+                      if (!empty($m['protocol'][$s['side']]['players'])) {
+                        foreach ($m['protocol'][$s['side']]['players'] as $rp) {
+                          if ((string)$rp['number'] === (string)$num) { $pname = $rp['name']; break; }
+                        }
+                      }
+                      $firstGoal = ['key' => $key, 'scorer' => $num, 'name' => $pname, 'clubId' => $cid];
+                    }
+                  }
+                }
+              }
+              if ($firstGoal) {
+                $ukey = $firstGoal['clubId'] . '_' . $firstGoal['scorer'];
+                if (!isset($allGoalScorers[$ukey])) {
+                  $allGoalScorers[$ukey] = ['name' => $firstGoal['name'], 'clubId' => $firstGoal['clubId'], 'count' => 0];
+                }
+                $allGoalScorers[$ukey]['count']++;
+                // store club name
+                foreach ($clubs as $c) { if ($c['id'] == $firstGoal['clubId']) { $allGoalScorers[$ukey]['clubName'] = $c['name']; break; } }
+              }
+
               foreach ($sides as $s) {
                 $cid = $s['clubId'];
                 $pdata = $m['protocol'][$s['side']];
                 if (!isset($teamStats[$cid])) {
                   $teamStats[$cid] = ['players' => [], 'goalies' => []];
                 }
+                // Build name cache
+                if (!empty($pdata['players'])) {
+                  foreach ($pdata['players'] as $rp) {
+                    $playerNameCache[$cid][$rp['number']] = ['name' => $rp['name'], 'position' => $rp['position'] ?? ''];
+                  }
+                }
                 // Player stats (skaters)
                 if (!empty($pdata['playerStats'])) {
                   foreach ($pdata['playerStats'] as $num => $ps) {
                     if (!isset($teamStats[$cid]['players'][$num])) {
                       $pInfo = ['name' => $num, 'position' => '', 'goals' => 0, 'assists' => 0, 'points' => 0, 'pim' => 0, 'games' => 0];
-                      // Find player name in roster
-                      if (!empty($pdata['players'])) {
-                        foreach ($pdata['players'] as $rp) {
-                          if ((string)$rp['number'] === (string)$num) {
-                            $pInfo['name'] = $rp['name'];
-                            $pInfo['position'] = $rp['position'];
-                            break;
-                          }
-                        }
+                      if (isset($playerNameCache[$cid][$num])) {
+                        $pInfo['name'] = $playerNameCache[$cid][$num]['name'];
+                        $pInfo['position'] = $playerNameCache[$cid][$num]['position'];
                       }
                       $teamStats[$cid]['players'][$num] = $pInfo;
                     }
@@ -455,13 +500,8 @@ $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
                   foreach ($pdata['goalieStats'] as $num => $gs) {
                     if (!isset($teamStats[$cid]['goalies'][$num])) {
                       $gInfo = ['name' => $num, 'saves' => 0, 'goalsAgainst' => 0, 'timeOnIce' => 0, 'games' => 0];
-                      if (!empty($pdata['players'])) {
-                        foreach ($pdata['players'] as $rp) {
-                          if ((string)$rp['number'] === (string)$num) {
-                            $gInfo['name'] = $rp['name'];
-                            break;
-                          }
-                        }
+                      if (isset($playerNameCache[$cid][$num])) {
+                        $gInfo['name'] = $playerNameCache[$cid][$num]['name'];
                       }
                       $teamStats[$cid]['goalies'][$num] = $gInfo;
                     }
@@ -477,15 +517,147 @@ $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
             if (!$hasStats): ?>
               <p class="empty-msg">Статистика игроков появится после загрузки протоколов матчей.</p>
             <?php else:
-              foreach ($teamStats as $cid => $ts):
+              // Build tournament-wide leaderboards
+              $allPlayers = [];
+              $allGoalies = [];
+              foreach ($teamStats as $cid => $ts) {
+                $clubName = '';
+                foreach ($clubs as $c) { if ($c['id'] == $cid) { $clubName = $c['name']; break; } }
+                foreach ($ts['players'] as $num => $p) {
+                  $allPlayers[] = [
+                    'name' => $p['name'],
+                    'position' => $p['position'],
+                    'goals' => $p['goals'],
+                    'assists' => $p['assists'],
+                    'points' => $p['points'],
+                    'pim' => $p['pim'],
+                    'games' => $p['games'],
+                    'clubId' => $cid,
+                    'clubName' => $clubName,
+                  ];
+                }
+                foreach ($ts['goalies'] as $num => $g) {
+                  $allGoalies[] = [
+                    'name' => $g['name'],
+                    'saves' => $g['saves'],
+                    'goalsAgainst' => $g['goalsAgainst'],
+                    'timeOnIce' => $g['timeOnIce'],
+                    'games' => $g['games'],
+                    'clubId' => $cid,
+                    'clubName' => $clubName,
+                  ];
+                }
+              }
+
+              // Sort for top-5 lists
+              usort($allPlayers, function($a, $b) { return $b['points'] - $a['points']; });
+              $topScorers = array_slice($allPlayers, 0, 5);
+
+              $byGoals = $allPlayers;
+              usort($byGoals, function($a, $b) { return $b['goals'] - $a['goals']; });
+              $topSnipers = array_slice($byGoals, 0, 5);
+
+              $byAssists = $allPlayers;
+              usort($byAssists, function($a, $b) { return $b['assists'] - $a['assists']; });
+              $topAssistants = array_slice($byAssists, 0, 5);
+
+              // Defenders only
+              $defenders = array_filter($allPlayers, function($p) { return strcasecmp($p['position'], 'Защ') === 0; });
+              usort($defenders, function($a, $b) { return $b['points'] - $a['points']; });
+              $topDefScorers = array_slice(array_values($defenders), 0, 5);
+
+              // First goal scorers
+              $firstGoalList = array_values($allGoalScorers);
+              usort($firstGoalList, function($a, $b) { return $b['count'] - $a['count']; });
+
+              // Goalies with minimum 60 min (3600 sec) TOI
+              $eligibleGoalies = array_filter($allGoalies, function($g) { return $g['timeOnIce'] >= 3600; });
+              foreach ($eligibleGoalies as &$eg) {
+                $eg['gaa'] = round(3600 * $eg['goalsAgainst'] / $eg['timeOnIce'], 2);
+              }
+              usort($eligibleGoalies, function($a, $b) { return $a['gaa'] <=> $b['gaa']; });
+              $topGoalies = array_slice(array_values($eligibleGoalies), 0, 5);
+            ?>
+
+            <!-- Leaderboard cards -->
+            <div class="stat-cards-grid">
+              <?php $cards = [
+                ['title' => 'Бомбардир', 'icon' => '🏒', 'items' => $topScorers, 'valField' => 'points', 'valLabel' => 'О'],
+                ['title' => 'Снайпер', 'icon' => '🎯', 'items' => $topSnipers, 'valField' => 'goals', 'valLabel' => 'Г'],
+                ['title' => 'Ассистент', 'icon' => '🎯', 'items' => $topAssistants, 'valField' => 'assists', 'valLabel' => 'П'],
+              ]; foreach ($cards as $card): ?>
+              <div class="stat-card">
+                <div class="stat-card-header"><?= $card['icon'] ?> <?= $card['title'] ?></div>
+                <?php if (empty($card['items'])): ?>
+                  <div class="stat-card-empty">Нет данных</div>
+                <?php else: $rnk = 0; foreach ($card['items'] as $p): $rnk++; ?>
+                  <div class="stat-card-row">
+                    <span class="stat-card-rank"><?= $rnk ?></span>
+                    <span class="stat-card-name"><?= htmlspecialchars($p['name'] ?? '?') ?></span>
+                    <span class="stat-card-club"><?= htmlspecialchars($p['clubName'] ?? '') ?></span>
+                    <span class="stat-card-val"><?= (int)$p[$card['valField']] ?></span>
+                  </div>
+                <?php endforeach; endif; ?>
+              </div>
+              <?php endforeach; ?>
+
+              <?php
+              // First goal scorer card
+              $firstGoalItems = array_slice($firstGoalList, 0, 5);
+              ?>
+              <div class="stat-card">
+                <div class="stat-card-header">🥇 Забивает первым</div>
+                <?php if (empty($firstGoalItems)): ?>
+                  <div class="stat-card-empty">Нет данных</div>
+                <?php else: $rnk = 0; foreach ($firstGoalItems as $p): $rnk++; ?>
+                  <div class="stat-card-row">
+                    <span class="stat-card-rank"><?= $rnk ?></span>
+                    <span class="stat-card-name"><?= htmlspecialchars($p['name'] ?? '?') ?></span>
+                    <span class="stat-card-club"><?= htmlspecialchars($p['clubName'] ?? '') ?></span>
+                    <span class="stat-card-val"><?= (int)$p['count'] ?></span>
+                  </div>
+                <?php endforeach; endif; ?>
+              </div>
+
+              <!-- Defender scorer card -->
+              <div class="stat-card">
+                <div class="stat-card-header">🛡 Бомбардир-защитник</div>
+                <?php if (empty($topDefScorers)): ?>
+                  <div class="stat-card-empty">Нет данных</div>
+                <?php else: $rnk = 0; foreach ($topDefScorers as $p): $rnk++; ?>
+                  <div class="stat-card-row">
+                    <span class="stat-card-rank"><?= $rnk ?></span>
+                    <span class="stat-card-name"><?= htmlspecialchars($p['name'] ?? '?') ?></span>
+                    <span class="stat-card-club"><?= htmlspecialchars($p['clubName'] ?? '') ?></span>
+                    <span class="stat-card-val"><?= (int)$p['points'] ?></span>
+                  </div>
+                <?php endforeach; endif; ?>
+              </div>
+
+              <!-- Goalie card -->
+              <div class="stat-card">
+                <div class="stat-card-header">🧤 Вратарь (КН)</div>
+                <?php if (empty($topGoalies)): ?>
+                  <div class="stat-card-empty">Нет данных</div>
+                <?php else: $rnk = 0; foreach ($topGoalies as $g): $rnk++; ?>
+                  <div class="stat-card-row">
+                    <span class="stat-card-rank"><?= $rnk ?></span>
+                    <span class="stat-card-name"><?= htmlspecialchars($g['name'] ?? '?') ?></span>
+                    <span class="stat-card-club"><?= htmlspecialchars($g['clubName'] ?? '') ?></span>
+                    <span class="stat-card-val"><?= number_format($g['gaa'], 2, '.', '') ?></span>
+                  </div>
+                <?php endforeach; endif; ?>
+              </div>
+            </div>
+
+            <!-- Per-team detailed tables -->
+            <?php foreach ($teamStats as $cid => $ts):
                 $clubName = '';
                 $clubLogo = '';
                 foreach ($clubs as $c) {
                   if ($c['id'] == $cid) { $clubName = $c['name']; $clubLogo = $c['logo'] ?? ''; break; }
                 }
-                // Sort players by points desc
                 uasort($ts['players'], function($a, $b) { return $b['points'] - $a['points']; });
-                // Sort goalies by timeOnIce desc
                 uasort($ts['goalies'], function($a, $b) { return $b['timeOnIce'] - $a['timeOnIce']; });
             ?>
               <div class="stats-team-block">
@@ -518,7 +690,7 @@ $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
                   <tbody>
                     <?php foreach ($ts['goalies'] as $num => $g):
                       $gaa = $g['timeOnIce'] > 0
-                        ? round($g['goalsAgainst'] / ($g['timeOnIce'] / 60), 1)
+                        ? round(3600 * $g['goalsAgainst'] / $g['timeOnIce'], 2)
                         : 0;
                       $toiMin = floor($g['timeOnIce'] / 60);
                       $toiSec = $g['timeOnIce'] % 60;
@@ -527,7 +699,7 @@ $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
                       <td><?= htmlspecialchars($num) ?></td>
                       <td style="text-align:left;"><?= htmlspecialchars($g['name']) ?></td>
                       <td><?= $g['games'] ?></td>
-                      <td><?= number_format($gaa, 1, '.', '') ?></td>
+                      <td><?= number_format($gaa, 2, '.', '') ?></td>
                       <td><?= $g['goalsAgainst'] ?></td>
                       <td><?= $toiMin ?>:<?= str_pad($toiSec, 2, '0', STR_PAD_LEFT) ?></td>
                     </tr>
