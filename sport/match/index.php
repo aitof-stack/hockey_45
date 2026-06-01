@@ -80,10 +80,6 @@ $hasEvents = !empty($protocol['home']['goals']) || !empty($protocol['away']['goa
   .stats-block td.left { text-align: left; }
   .stats-block .sb-subtitle { font-weight: 700; font-size: 0.8rem; color: rgba(255,255,255,0.6); padding: 10px 4px 4px; text-transform: uppercase; letter-spacing: 0.5px; }
 
-  .st-table { width: 100%; border-collapse: separate; border-spacing: 2px; font-family: inherit; }
-  .st-table th { background: #a8c8e0; color: #1e293b; padding: 6px 4px; font-size: 0.85rem; font-weight: 700; white-space: nowrap; text-align: center; border-radius: 6px; text-transform: uppercase; letter-spacing: 1.2px; }
-  .st-table td { padding: 8px 6px; text-align: center; border: none; white-space: nowrap; background: #E8F4FD; color: #1e293b; font-weight: 700; font-size: 1rem; border-radius: 10px; font-family: inherit; }
-
   .events-wrapper { border-radius: 20px; padding: 14px; background: linear-gradient(180deg, var(--primary-dark), var(--primary)); }
   .events-wrapper .ev-header { display: flex; align-items: center; gap: 12px; padding: 10px 4px 14px; font-weight: 700; font-size: 1.1rem; color: #fff; }
   .ev-row { display: grid; grid-template-columns: 1fr 70px 1fr; gap: 4px; padding: 4px 0; }
@@ -340,7 +336,7 @@ $hasEvents = !empty($protocol['home']['goals']) || !empty($protocol['away']['goa
           <?php if (!empty($skaters)): ?>
           <div class="sb-subtitle">Полевые игроки</div>
           <table class="st-table" style="table-layout:auto;">
-            <thead><tr><th>#</th><th style="text-align:left;">Игрок</th><th>Г</th><th>П</th><th>О</th><th>Штр</th></tr></thead>
+            <thead><tr><th>#</th><th class="left">Игрок</th><th>Г</th><th>П</th><th>О</th><th>Штр</th></tr></thead>
             <tbody>
               <?php foreach ($skaters as $num => $p): ?>
               <tr><td><?= htmlspecialchars($num) ?></td><td class="left"><?= htmlspecialchars($p['name']) ?></td><td><?= $p['g'] ?></td><td><?= $p['a'] ?></td><td style="font-weight:700;"><?= $p['p'] ?></td><td><?= $p['pim'] ? number_format($p['pim'], 1, '.', '') : '0' ?></td></tr>
@@ -351,7 +347,7 @@ $hasEvents = !empty($protocol['home']['goals']) || !empty($protocol['away']['goa
           <?php if (!empty($goalies)): ?>
           <div class="sb-subtitle" style="margin-top:8px;">Вратари</div>
           <table class="st-table" style="table-layout:auto;">
-            <thead><tr><th>#</th><th style="text-align:left;">Вратарь</th><th>КН</th><th>ПШ</th><th>Время</th></tr></thead>
+            <thead><tr><th>#</th><th class="left">Вратарь</th><th>КН</th><th>ПШ</th><th>Время</th></tr></thead>
             <tbody>
               <?php foreach ($goalies as $num => $g):
                 $toiMin = floor($g['toi'] / 60); $toiSec = $g['toi'] % 60;
