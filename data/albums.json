@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "title": "Турнир посвященный Дню Победы",
+        "type": "photo",
+        "date": "2026-05-31",
+        "items": [
+            {
+                "file": "\/uploads\/album_1780202254_8795232d.jpg"
+            },
+            {
+                "file": "\/uploads\/album_1780202254_695cf3d8.jpg"
+            },
+            {
+                "file": "\/uploads\/album_1780202254_c6dc5219.jpg"
+            },
+            {
+                "file": "\/uploads\/album_1780202254_b2e9b309.jpg"
+            }
+        ]
+    }
+]

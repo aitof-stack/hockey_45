@@ -1,0 +1,262 @@
+@charset "utf-8";
+.main {
+	display:flex;
+	margin: 160px 0 0;
+	background: none;
+	padding: 0;
+	border-radius: 0px;
+}
+main {
+    flex: .65 1 65%;
+    margin: 0 5% 20px;
+    background: var(--block-fone);
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 1px 1px 4px 0 #aaa;
+    overflow-x: auto;
+}
+
+main:only-child {flex-grow: 1;}
+
+.article-text h1 {
+	font-size:1.3rem;
+}
+
+main table, main img {
+    max-width: 100%;
+}
+
+main img {
+    height: auto;
+}
+
+.article-header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-header {
+    flex: 1 1 0%;
+}
+
+.article-header-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.article-header-row > .article-share-content:not(:only-child) {
+    margin-left: 30px;
+}
+
+.article-image img {
+    max-width: max(20vw,200px);
+    max-height: 40vh;
+    margin: 10px 10px 10px 0;
+    border-radius: 10px;
+}
+
+.article-text:not(:empty) {
+    margin-bottom: 50px;
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    }
+
+.article-text table {
+    margin-left: 0 !important;
+}
+
+time {display: inline-block;margin: 15px;color: #ce0000;font-weight: bold;}
+
+time:not(:empty)::before {
+    content: '\f017';
+    margin-right: 5px;
+    color: var(--base-font-color);
+}
+
+.anons {
+	
+color: var(--base-font-color);
+	
+font-weight: bold;
+	
+padding: 1em 5%;
+}
+
+aside {flex: .25 1 25%;padding: 0 5% 20px 0;box-sizing: border-box;}
+
+.other-articles {
+    background: var(--block-fone);
+    padding: 5px;
+    text-align: center;
+    font-family: 'Exo_2-Bold';
+    font-weight: normal;
+    letter-spacing: -.5px;border-radius: 15px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.other-articles::before, .other-articles::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #d77611;
+}
+
+.other-articles::after {
+    top: unset;
+    bottom: 0;
+}
+
+.inner-groups > .other-articles {
+    margin-bottom: 5px;
+}
+
+.other-articles:not(:first-child) {
+    margin-top: 30px;
+}
+
+.articles-wrapper {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.article-counters {
+    font-size: 1rem;
+}
+
+.aside-mention {
+		display: flex;
+    background: #FFF;
+    flex-grow: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.aside-mention > a {
+	display: flex;
+	align-items: center;
+}
+
+.aside-mention > a > img {
+    max-width: 50px;
+}
+
+.aside-mention > a + .aside-mention-text {
+    margin-left: 10px;
+}
+
+.aside-mention-text:only-child > a {
+    margin: 10px;
+}
+
+.aside-mention-text {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.aside-mention-text > a {
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+}
+
+.aside-mention-text > span {
+		display:block;
+    text-align: right;
+    font-size: .9em;
+    text-transform: uppercase;
+    color: green;
+}
+
+.aside-news-item {
+    position: relative;
+    flex: 1 1 100px;
+    background: var(--block-fone);
+    border-radius: 15px;
+    overflow: hidden;
+    font-size: .85rem;
+    min-height: 175px;
+    display: flex;
+    flex-direction: column;
+    min-width: 40%;
+}
+
+.aside-news-item:first-child {
+    flex-basis: 100%;
+}
+
+.aside-news-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex: 1 0;
+    position: relative;
+}
+
+.aside-news-image > a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.aside-news-date {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background: var(--block-fone);
+    border-radius: 10px;
+    padding: 3px;
+    opacity: .95;
+}
+
+.aside-news-caption {
+    padding: 5px 10px;
+    box-shadow: 0 0 1em 1em var(--block-fone);
+    z-index: 1;
+    max-height: 50%;
+}
+
+.dark .aside-news-caption {background: var(--dark-fone);box-shadow: 0 0 30px 30px var(--dark-fone);}
+
+.aside-news-caption > a {
+    text-decoration: none;
+}
+
+.dark a.aside-news-header {
+    color: #FFF;
+}
+
+@media (max-width:1000px) {
+	aside {
+		margin: 1em;
+		flex: 1 0;
+		padding: 0;
+	}
+	main {
+		flex: 1 0;
+		margin: 1em;
+		/* overflow: hidden; */
+	}
+	.main {
+	flex-direction: column;
+		margin-top: 60px;
+	}
+	.article-image {
+    flex-basis: 100%;
+}
+}

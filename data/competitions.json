@@ -1,0 +1,2261 @@
+[
+    {
+        "id": 1,
+        "name": "Кубок юных чемпионов посвященный Дню победы",
+        "season": "",
+        "status": "finished",
+        "logo": "\/uploads\/logo_1780116446_4af81016.png",
+        "description": "",
+        "match_dates": [
+            "2026-05-11"
+        ],
+        "club_ids": [
+            1,
+            2,
+            3,
+            4
+        ],
+        "type": "regular",
+        "matches": [
+            {
+                "date": "2026-05-11",
+                "home_id": 1,
+                "away_id": 3,
+                "home_goals": 2,
+                "away_goals": 4,
+                "shootout": false,
+                "protocol": {
+                    "home": {
+                        "players": [
+                            {
+                                "number": "1",
+                                "name": "Семён Устинов",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "30",
+                                "name": "Денис Распопов",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "2",
+                                "name": "Илья Эрленбуш",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "3",
+                                "name": "Игорь Бушманов",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "4",
+                                "name": "Семён Коркин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "5",
+                                "name": "Андрей Колотыгин",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "6",
+                                "name": "Арсений Эрленбуш",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "7",
+                                "name": "Егор Сидорин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "8",
+                                "name": "Дмитрий Распопов",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "9",
+                                "name": "Михаил Аитов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "10",
+                                "name": "Дмитрий Бушманов",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "11",
+                                "name": "Семён Дмитриев",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "12",
+                                "name": "Матвей Суковатицын",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "13",
+                                "name": "Вадим Бабкин",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "14",
+                                "name": "Андрей Фомин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "15",
+                                "name": "Арсений Симахин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "17",
+                                "name": "Остап Чукреев",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "18",
+                                "name": "Дамир Ибрагимов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "19",
+                                "name": "Александр Тарасов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "21",
+                                "name": "Максим Чухманов",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "23",
+                                "name": "Андрей Некрасов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "31",
+                                "name": "Алексей Колотыгин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "34",
+                                "name": "Никита Суханов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "49",
+                                "name": "Кирилл Сидорин",
+                                "position": "Нап"
+                            }
+                        ],
+                        "playerStats": {
+                            "6": {
+                                "goals": 0,
+                                "assists": 0,
+                                "points": 0,
+                                "pim": 1.5
+                            },
+                            "10": {
+                                "goals": 0,
+                                "assists": 0,
+                                "points": 0,
+                                "pim": 1.5
+                            },
+                            "11": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            },
+                            "15": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            },
+                            "34": {
+                                "goals": 0,
+                                "assists": 1,
+                                "points": 1,
+                                "pim": 0
+                            }
+                        },
+                        "goalieStats": {
+                            "1": {
+                                "saves": 3,
+                                "goalsAgainst": 2,
+                                "timeOnIce": 2457
+                            },
+                            "30": {
+                                "saves": 5,
+                                "goalsAgainst": 2,
+                                "timeOnIce": 1143
+                            }
+                        },
+                        "periodStats": {
+                            "1": {
+                                "scoreA": 1,
+                                "scoreB": 1,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "2": {
+                                "scoreA": 0,
+                                "scoreB": 1,
+                                "penaltiesA": 1.5,
+                                "penaltiesB": 0
+                            },
+                            "3": {
+                                "scoreA": 1,
+                                "scoreB": 2,
+                                "penaltiesA": 1.5,
+                                "penaltiesB": 0
+                            }
+                        },
+                        "goals": [
+                            {
+                                "time": "13:21",
+                                "period": 1,
+                                "scorer": "11",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "03:13",
+                                "period": 3,
+                                "scorer": "15",
+                                "assist1": "34",
+                                "assist2": "",
+                                "situation": ""
+                            }
+                        ],
+                        "penalties": [
+                            {
+                                "time": "02:51",
+                                "period": 2,
+                                "player": "10",
+                                "minutes": "1.5",
+                                "reason": "Слишком много игроков",
+                                "start": "02:51",
+                                "end": "03:31"
+                            },
+                            {
+                                "time": "04:52",
+                                "period": 3,
+                                "player": "6",
+                                "minutes": "1.5",
+                                "reason": "Подножка",
+                                "start": "04:52",
+                                "end": "06:22"
+                            }
+                        ]
+                    },
+                    "away": {
+                        "players": [
+                            {
+                                "number": "55",
+                                "name": "Захаров Николай",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "56",
+                                "name": "Жалилов Артур",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "2",
+                                "name": "Шестаков Иван",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "7",
+                                "name": "Водянников Антон",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "17",
+                                "name": "Понамарева Надежда",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "24",
+                                "name": "Пильгуй Максим",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "27",
+                                "name": "Пешков Денис",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "28",
+                                "name": "Смольников Константин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "30",
+                                "name": "Демидчик Павел",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "31",
+                                "name": "Водянников Семен",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "33",
+                                "name": "Морозов Дмитрий",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "36",
+                                "name": "Щетинкин Артем",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "38",
+                                "name": "Водянников Артем",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "39",
+                                "name": "Андреев Игорь",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "41",
+                                "name": "Мукашев Жанат",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "43",
+                                "name": "Ушаков Роман",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "44",
+                                "name": "Смирнов Владислав",
+                                "position": "Нап"
+                            }
+                        ],
+                        "playerStats": {
+                            "27": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            },
+                            "30": {
+                                "goals": 2,
+                                "assists": 0,
+                                "points": 2,
+                                "pim": 0
+                            },
+                            "41": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            }
+                        },
+                        "goalieStats": {
+                            "55": {
+                                "saves": 20,
+                                "goalsAgainst": 2,
+                                "timeOnIce": 3600
+                            },
+                            "56": {
+                                "saves": 0,
+                                "goalsAgainst": 0,
+                                "timeOnIce": 0
+                            }
+                        },
+                        "periodStats": {
+                            "1": {
+                                "scoreA": 1,
+                                "scoreB": 1,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "2": {
+                                "scoreA": 0,
+                                "scoreB": 1,
+                                "penaltiesA": 1.5,
+                                "penaltiesB": 0
+                            },
+                            "3": {
+                                "scoreA": 1,
+                                "scoreB": 2,
+                                "penaltiesA": 1.5,
+                                "penaltiesB": 0
+                            }
+                        },
+                        "goals": [
+                            {
+                                "time": "09:04",
+                                "period": 1,
+                                "scorer": "27",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "03:31",
+                                "period": 2,
+                                "scorer": "30",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": "+1"
+                            },
+                            {
+                                "time": "06:59",
+                                "period": 3,
+                                "scorer": "30",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "08:19",
+                                "period": 3,
+                                "scorer": "41",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            }
+                        ],
+                        "penalties": []
+                    }
+                }
+            },
+            {
+                "date": "2026-05-11",
+                "home_id": 2,
+                "away_id": 4,
+                "home_goals": 3,
+                "away_goals": 9,
+                "shootout": false,
+                "protocol": {
+                    "home": {
+                        "players": [
+                            {
+                                "number": "1",
+                                "name": "Данилейко Максим",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "9",
+                                "name": "Низавитин Ярослав",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "12",
+                                "name": "Топорков Иван",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "20",
+                                "name": "Стародуб Тимофей",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "26",
+                                "name": "Петрукович Александр",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "29",
+                                "name": "Цевелева Анжелика",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "30",
+                                "name": "Рамазанов Егор",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "31",
+                                "name": "Шушаков Евгений",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "72",
+                                "name": "Яковкин Матвей",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "96",
+                                "name": "Назарова Варвара",
+                                "position": "Защ"
+                            }
+                        ],
+                        "playerStats": {
+                            "12": {
+                                "goals": 2,
+                                "assists": 0,
+                                "points": 2,
+                                "pim": 0
+                            },
+                            "72": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            }
+                        },
+                        "goalieStats": {
+                            "1": {
+                                "saves": 37,
+                                "goalsAgainst": 9,
+                                "timeOnIce": 3600
+                            }
+                        },
+                        "periodStats": {
+                            "1": {
+                                "scoreA": 0,
+                                "scoreB": 4,
+                                "penaltiesA": 0,
+                                "penaltiesB": 3
+                            },
+                            "2": {
+                                "scoreA": 1,
+                                "scoreB": 1,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "3": {
+                                "scoreA": 2,
+                                "scoreB": 4,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            }
+                        },
+                        "goals": [
+                            {
+                                "time": "12:01",
+                                "period": 2,
+                                "scorer": "72",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "02:59",
+                                "period": 3,
+                                "scorer": "12",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "04:33",
+                                "period": 3,
+                                "scorer": "12",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            }
+                        ],
+                        "penalties": []
+                    },
+                    "away": {
+                        "players": [
+                            {
+                                "number": "2",
+                                "name": "Скоморохов Дмитрий",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "69",
+                                "name": "Иванов Артем",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "4",
+                                "name": "Шубин Тимофей",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "7",
+                                "name": "Рябков Арсений",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "8",
+                                "name": "Шанаурин Лев",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "9",
+                                "name": "Корякин Артем",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "12",
+                                "name": "Клюкин Дмитрий",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "14",
+                                "name": "Серков Илья",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "15",
+                                "name": "Меньшенин Арсений",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "17",
+                                "name": "Шубин Михаил",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "20",
+                                "name": "Скоморохов Илья",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "21",
+                                "name": "Рогачев Платон",
+                                "position": "Нап"
+                            }
+                        ],
+                        "playerStats": {
+                            "4": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 1.5
+                            },
+                            "12": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 1.5
+                            },
+                            "14": {
+                                "goals": 3,
+                                "assists": 0,
+                                "points": 3,
+                                "pim": 0
+                            },
+                            "15": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            },
+                            "17": {
+                                "goals": 3,
+                                "assists": 0,
+                                "points": 3,
+                                "pim": 0
+                            }
+                        },
+                        "goalieStats": {
+                            "2": {
+                                "saves": 5,
+                                "goalsAgainst": 3,
+                                "timeOnIce": 2242
+                            },
+                            "69": {
+                                "saves": 7,
+                                "goalsAgainst": 0,
+                                "timeOnIce": 1358
+                            }
+                        },
+                        "periodStats": {
+                            "1": {
+                                "scoreA": 0,
+                                "scoreB": 4,
+                                "penaltiesA": 0,
+                                "penaltiesB": 3
+                            },
+                            "2": {
+                                "scoreA": 1,
+                                "scoreB": 1,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "3": {
+                                "scoreA": 2,
+                                "scoreB": 4,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            }
+                        },
+                        "goals": [
+                            {
+                                "time": "03:56",
+                                "period": 1,
+                                "scorer": "14",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "09:07",
+                                "period": 1,
+                                "scorer": "4",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "10:12",
+                                "period": 1,
+                                "scorer": "17",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "14:25",
+                                "period": 1,
+                                "scorer": "12",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "11:26",
+                                "period": 2,
+                                "scorer": "14",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "03:22",
+                                "period": 3,
+                                "scorer": "17",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "07:50",
+                                "period": 3,
+                                "scorer": "14",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "08:34",
+                                "period": 3,
+                                "scorer": "15",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "12:39",
+                                "period": 3,
+                                "scorer": "17",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            }
+                        ],
+                        "penalties": [
+                            {
+                                "time": "01:44",
+                                "period": 1,
+                                "player": "12",
+                                "minutes": "1.5",
+                                "reason": "Подножка",
+                                "start": "01:44",
+                                "end": "03:14"
+                            },
+                            {
+                                "time": "07:06",
+                                "period": 1,
+                                "player": "4",
+                                "minutes": "1.5",
+                                "reason": "Подножка",
+                                "start": "07:06",
+                                "end": "08:36"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "date": "2026-05-11",
+                "home_id": 3,
+                "away_id": 4,
+                "home_goals": 1,
+                "away_goals": 18,
+                "shootout": false,
+                "protocol": {
+                    "home": {
+                        "players": [
+                            {
+                                "number": "55",
+                                "name": "Захаров Николай",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "56",
+                                "name": "Жалилов Артур",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "2",
+                                "name": "Шестаков Иван",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "7",
+                                "name": "Водянников Антон",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "17",
+                                "name": "Понамарева Надежда",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "24",
+                                "name": "Пильгуй Максим",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "27",
+                                "name": "Пешков Денис",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "28",
+                                "name": "Смольников Константин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "30",
+                                "name": "Демидчик Павел",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "31",
+                                "name": "Водянников Семен",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "33",
+                                "name": "Морозов Дмитрий",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "36",
+                                "name": "Щетинкин Артем",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "38",
+                                "name": "Водянников Артем",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "39",
+                                "name": "Андреев Игорь",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "41",
+                                "name": "Мукашев Жанат",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "43",
+                                "name": "Ушаков Роман",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "44",
+                                "name": "Смирнов Владислав",
+                                "position": "Нап"
+                            }
+                        ],
+                        "playerStats": {
+                            "41": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            }
+                        },
+                        "goalieStats": {
+                            "55": {
+                                "saves": 24,
+                                "goalsAgainst": 16,
+                                "timeOnIce": 3328
+                            },
+                            "56": {
+                                "saves": 5,
+                                "goalsAgainst": 2,
+                                "timeOnIce": 272
+                            }
+                        },
+                        "periodStats": {
+                            "1": {
+                                "scoreA": 0,
+                                "scoreB": 7,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "2": {
+                                "scoreA": 1,
+                                "scoreB": 6,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "3": {
+                                "scoreA": 0,
+                                "scoreB": 5,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            }
+                        },
+                        "goals": [
+                            {
+                                "time": "13:51",
+                                "period": 2,
+                                "scorer": "41",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            }
+                        ],
+                        "penalties": []
+                    },
+                    "away": {
+                        "players": [
+                            {
+                                "number": "2",
+                                "name": "Скоморохов Дмитрий",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "69",
+                                "name": "Иванов Артем",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "4",
+                                "name": "Шубин Тимофей",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "7",
+                                "name": "Рябков Арсений",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "8",
+                                "name": "Шанаурин Лев",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "9",
+                                "name": "Корякин Артем",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "12",
+                                "name": "Клюкин Дмитрий",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "14",
+                                "name": "Серков Илья",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "15",
+                                "name": "Меньшенин Арсений",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "17",
+                                "name": "Шубин Михаил",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "20",
+                                "name": "Скоморохов Илья",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "21",
+                                "name": "Рогачев Платон",
+                                "position": "Нап"
+                            }
+                        ],
+                        "playerStats": {
+                            "4": {
+                                "goals": 1,
+                                "assists": 1,
+                                "points": 2,
+                                "pim": 0
+                            },
+                            "8": {
+                                "goals": 0,
+                                "assists": 1,
+                                "points": 1,
+                                "pim": 0
+                            },
+                            "9": {
+                                "goals": 1,
+                                "assists": 1,
+                                "points": 2,
+                                "pim": 0
+                            },
+                            "12": {
+                                "goals": 1,
+                                "assists": 2,
+                                "points": 3,
+                                "pim": 0
+                            },
+                            "14": {
+                                "goals": 3,
+                                "assists": 0,
+                                "points": 3,
+                                "pim": 0
+                            },
+                            "15": {
+                                "goals": 2,
+                                "assists": 0,
+                                "points": 2,
+                                "pim": 0
+                            },
+                            "17": {
+                                "goals": 5,
+                                "assists": 0,
+                                "points": 5,
+                                "pim": 0
+                            },
+                            "20": {
+                                "goals": 3,
+                                "assists": 0,
+                                "points": 3,
+                                "pim": 0
+                            },
+                            "21": {
+                                "goals": 2,
+                                "assists": 0,
+                                "points": 2,
+                                "pim": 0
+                            }
+                        },
+                        "goalieStats": {
+                            "2": {
+                                "saves": 3,
+                                "goalsAgainst": 1,
+                                "timeOnIce": 2284
+                            },
+                            "69": {
+                                "saves": 3,
+                                "goalsAgainst": 0,
+                                "timeOnIce": 1316
+                            }
+                        },
+                        "periodStats": {
+                            "1": {
+                                "scoreA": 0,
+                                "scoreB": 7,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "2": {
+                                "scoreA": 1,
+                                "scoreB": 6,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "3": {
+                                "scoreA": 0,
+                                "scoreB": 5,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            }
+                        },
+                        "goals": [
+                            {
+                                "time": "03:16",
+                                "period": 1,
+                                "scorer": "20",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "03:29",
+                                "period": 1,
+                                "scorer": "21",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "04:57",
+                                "period": 1,
+                                "scorer": "12",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "05:12",
+                                "period": 1,
+                                "scorer": "17",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "09:56",
+                                "period": 1,
+                                "scorer": "9",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "11:24",
+                                "period": 1,
+                                "scorer": "14",
+                                "assist1": "8",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "12:25",
+                                "period": 1,
+                                "scorer": "17",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "00:33",
+                                "period": 2,
+                                "scorer": "15",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "04:04",
+                                "period": 2,
+                                "scorer": "21",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "06:24",
+                                "period": 2,
+                                "scorer": "20",
+                                "assist1": "12",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "07:25",
+                                "period": 2,
+                                "scorer": "17",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "10:45",
+                                "period": 2,
+                                "scorer": "14",
+                                "assist1": "9",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "12:25",
+                                "period": 2,
+                                "scorer": "15",
+                                "assist1": "4",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "04:08",
+                                "period": 3,
+                                "scorer": "20",
+                                "assist1": "12",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "04:13",
+                                "period": 3,
+                                "scorer": "14",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "05:12",
+                                "period": 3,
+                                "scorer": "17",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "12:46",
+                                "period": 3,
+                                "scorer": "17",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "14:24",
+                                "period": 3,
+                                "scorer": "4",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            }
+                        ],
+                        "penalties": []
+                    }
+                }
+            },
+            {
+                "date": "2026-05-11",
+                "home_id": 1,
+                "away_id": 2,
+                "home_goals": 3,
+                "away_goals": 2,
+                "shootout": false,
+                "protocol": {
+                    "home": {
+                        "players": [
+                            {
+                                "number": "1",
+                                "name": "Семён Устинов",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "30",
+                                "name": "Денис Распопов",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "2",
+                                "name": "Илья Эрленбуш",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "3",
+                                "name": "Игорь Бушманов",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "4",
+                                "name": "Семён Коркин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "5",
+                                "name": "Андрей Колотыгин",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "6",
+                                "name": "Арсений Эрленбуш",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "7",
+                                "name": "Егор Сидорин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "8",
+                                "name": "Дмитрий Распопов",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "9",
+                                "name": "Михаил Аитов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "10",
+                                "name": "Дмитрий Бушманов",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "11",
+                                "name": "Семён Дмитриев",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "12",
+                                "name": "Матвей Суковатицын",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "13",
+                                "name": "Вадим Бабкин",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "14",
+                                "name": "Андрей Фомин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "15",
+                                "name": "Арсений Симахин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "17",
+                                "name": "Остап Чукреев",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "18",
+                                "name": "Дамир Ибрагимов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "19",
+                                "name": "Александр Тарасов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "21",
+                                "name": "Максим Чухманов",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "23",
+                                "name": "Андрей Некрасов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "31",
+                                "name": "Алексей Колотыгин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "34",
+                                "name": "Никита Суханов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "49",
+                                "name": "Кирилл Сидорин",
+                                "position": "Нап"
+                            }
+                        ],
+                        "playerStats": {
+                            "11": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            },
+                            "15": {
+                                "goals": 1,
+                                "assists": 1,
+                                "points": 2,
+                                "pim": 0
+                            },
+                            "21": {
+                                "goals": 0,
+                                "assists": 1,
+                                "points": 1,
+                                "pim": 0
+                            },
+                            "23": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            }
+                        },
+                        "goalieStats": {
+                            "1": {
+                                "saves": 0,
+                                "goalsAgainst": 0,
+                                "timeOnIce": 0
+                            },
+                            "30": {
+                                "saves": 20,
+                                "goalsAgainst": 2,
+                                "timeOnIce": 3600
+                            }
+                        },
+                        "periodStats": {
+                            "1": {
+                                "scoreA": 0,
+                                "scoreB": 0,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "2": {
+                                "scoreA": 0,
+                                "scoreB": 1,
+                                "penaltiesA": 0,
+                                "penaltiesB": 1.5
+                            },
+                            "3": {
+                                "scoreA": 3,
+                                "scoreB": 1,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            }
+                        },
+                        "goals": [
+                            {
+                                "time": "03:02",
+                                "period": 3,
+                                "scorer": "15",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "04:34",
+                                "period": 3,
+                                "scorer": "23",
+                                "assist1": "21",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "09:52",
+                                "period": 3,
+                                "scorer": "11",
+                                "assist1": "15",
+                                "assist2": "",
+                                "situation": ""
+                            }
+                        ],
+                        "penalties": []
+                    },
+                    "away": {
+                        "players": [
+                            {
+                                "number": "1",
+                                "name": "Данилейко Максим",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "9",
+                                "name": "Низавитин Ярослав",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "12",
+                                "name": "Топорков Иван",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "20",
+                                "name": "Стародуб Тимофей",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "26",
+                                "name": "Петрукович Александр",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "29",
+                                "name": "Цевелева Анжелика",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "30",
+                                "name": "Рамазанов Егор",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "31",
+                                "name": "Шушаков Евгений",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "72",
+                                "name": "Яковкин Матвей",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "96",
+                                "name": "Назарова Варвара",
+                                "position": "Защ"
+                            }
+                        ],
+                        "playerStats": {
+                            "30": {
+                                "goals": 0,
+                                "assists": 0,
+                                "points": 0,
+                                "pim": 1.5
+                            },
+                            "72": {
+                                "goals": 2,
+                                "assists": 0,
+                                "points": 2,
+                                "pim": 0
+                            }
+                        },
+                        "goalieStats": {
+                            "1": {
+                                "saves": 11,
+                                "goalsAgainst": 3,
+                                "timeOnIce": 3600
+                            }
+                        },
+                        "periodStats": {
+                            "1": {
+                                "scoreA": 0,
+                                "scoreB": 0,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "2": {
+                                "scoreA": 0,
+                                "scoreB": 1,
+                                "penaltiesA": 0,
+                                "penaltiesB": 1.5
+                            },
+                            "3": {
+                                "scoreA": 3,
+                                "scoreB": 1,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            }
+                        },
+                        "goals": [
+                            {
+                                "time": "08:42",
+                                "period": 2,
+                                "scorer": "72",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "08:18",
+                                "period": 3,
+                                "scorer": "72",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            }
+                        ],
+                        "penalties": [
+                            {
+                                "time": "10:45",
+                                "period": 2,
+                                "player": "30",
+                                "minutes": "1.5",
+                                "reason": "Подножка",
+                                "start": "10:45",
+                                "end": "12:15"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "date": "2026-05-11",
+                "home_id": 2,
+                "away_id": 3,
+                "home_goals": 2,
+                "away_goals": 1,
+                "shootout": true,
+                "protocol": {
+                    "home": {
+                        "players": [
+                            {
+                                "number": "1",
+                                "name": "Данилейко Максим",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "9",
+                                "name": "Низавитин Ярослав",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "12",
+                                "name": "Топорков Иван",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "20",
+                                "name": "Стародуб Тимофей",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "26",
+                                "name": "Петрукович Александр",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "29",
+                                "name": "Цевелева Анжелика",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "30",
+                                "name": "Рамазанов Егор",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "31",
+                                "name": "Шушаков Евгений",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "72",
+                                "name": "Яковкин Матвей",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "96",
+                                "name": "Назарова Варвара",
+                                "position": "Защ"
+                            }
+                        ],
+                        "playerStats": {
+                            "72": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            }
+                        },
+                        "goalieStats": {
+                            "1": {
+                                "saves": 50,
+                                "goalsAgainst": 1,
+                                "timeOnIce": 3600
+                            }
+                        },
+                        "periodStats": {
+                            "1": {
+                                "scoreA": 0,
+                                "scoreB": 0,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "2": {
+                                "scoreA": 1,
+                                "scoreB": 0,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "3": {
+                                "scoreA": 0,
+                                "scoreB": 1,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            }
+                        },
+                        "goals": [
+                            {
+                                "time": "13:19",
+                                "period": 2,
+                                "scorer": "72",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            }
+                        ],
+                        "penalties": []
+                    },
+                    "away": {
+                        "players": [
+                            {
+                                "number": "55",
+                                "name": "Захаров Николай",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "56",
+                                "name": "Жалилов Артур",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "2",
+                                "name": "Шестаков Иван",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "7",
+                                "name": "Водянников Антон",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "17",
+                                "name": "Понамарева Надежда",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "24",
+                                "name": "Пильгуй Максим",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "27",
+                                "name": "Пешков Денис",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "28",
+                                "name": "Смольников Константин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "30",
+                                "name": "Демидчик Павел",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "31",
+                                "name": "Водянников Семен",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "33",
+                                "name": "Морозов Дмитрий",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "36",
+                                "name": "Щетинкин Артем",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "38",
+                                "name": "Водянников Артем",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "39",
+                                "name": "Андреев Игорь",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "41",
+                                "name": "Мукашев Жанат",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "43",
+                                "name": "Ушаков Роман",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "44",
+                                "name": "Смирнов Владислав",
+                                "position": "Нап"
+                            }
+                        ],
+                        "playerStats": {
+                            "31": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            }
+                        },
+                        "goalieStats": {
+                            "55": {
+                                "saves": 0,
+                                "goalsAgainst": 0,
+                                "timeOnIce": 0
+                            },
+                            "56": {
+                                "saves": 13,
+                                "goalsAgainst": 1,
+                                "timeOnIce": 3600
+                            }
+                        },
+                        "periodStats": {
+                            "1": {
+                                "scoreA": 0,
+                                "scoreB": 0,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "2": {
+                                "scoreA": 1,
+                                "scoreB": 0,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "3": {
+                                "scoreA": 0,
+                                "scoreB": 1,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            }
+                        },
+                        "goals": [
+                            {
+                                "time": "11:55",
+                                "period": 3,
+                                "scorer": "31",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            }
+                        ],
+                        "penalties": []
+                    }
+                }
+            },
+            {
+                "date": "2026-05-11",
+                "home_id": 4,
+                "away_id": 1,
+                "home_goals": 4,
+                "away_goals": 5,
+                "shootout": true,
+                "protocol": {
+                    "home": {
+                        "players": [
+                            {
+                                "number": "2",
+                                "name": "Скоморохов Дмитрий",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "69",
+                                "name": "Иванов Артем",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "4",
+                                "name": "Шубин Тимофей",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "7",
+                                "name": "Рябков Арсений",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "8",
+                                "name": "Шанаурин Лев",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "9",
+                                "name": "Корякин Артем",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "12",
+                                "name": "Клюкин Дмитрий",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "14",
+                                "name": "Серков Илья",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "15",
+                                "name": "Меньшенин Арсений",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "17",
+                                "name": "Шубин Михаил",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "20",
+                                "name": "Скоморохов Илья",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "21",
+                                "name": "Рогачев Платон",
+                                "position": "Нап"
+                            }
+                        ],
+                        "playerStats": {
+                            "7": {
+                                "goals": 0,
+                                "assists": 0,
+                                "points": 0,
+                                "pim": 1.5
+                            },
+                            "14": {
+                                "goals": 1,
+                                "assists": 1,
+                                "points": 2,
+                                "pim": 0
+                            },
+                            "15": {
+                                "goals": 0,
+                                "assists": 1,
+                                "points": 1,
+                                "pim": 0
+                            },
+                            "17": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 1.5
+                            },
+                            "20": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            },
+                            "21": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            }
+                        },
+                        "goalieStats": {
+                            "2": {
+                                "saves": 0,
+                                "goalsAgainst": 0,
+                                "timeOnIce": 0
+                            },
+                            "69": {
+                                "saves": 16,
+                                "goalsAgainst": 4,
+                                "timeOnIce": 3600
+                            }
+                        },
+                        "periodStats": {
+                            "1": {
+                                "scoreA": 1,
+                                "scoreB": 0,
+                                "penaltiesA": 3,
+                                "penaltiesB": 1.5
+                            },
+                            "2": {
+                                "scoreA": 2,
+                                "scoreB": 2,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "3": {
+                                "scoreA": 1,
+                                "scoreB": 2,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            }
+                        },
+                        "goals": [
+                            {
+                                "time": "02:31",
+                                "period": 1,
+                                "scorer": "14",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "00:15",
+                                "period": 2,
+                                "scorer": "17",
+                                "assist1": "14",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "14:48",
+                                "period": 2,
+                                "scorer": "20",
+                                "assist1": "15",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "08:54",
+                                "period": 3,
+                                "scorer": "21",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            }
+                        ],
+                        "penalties": [
+                            {
+                                "time": "04:07",
+                                "period": 1,
+                                "player": "7",
+                                "minutes": "1.5",
+                                "reason": "Подножка",
+                                "start": "04:07",
+                                "end": "05:37"
+                            },
+                            {
+                                "time": "11:47",
+                                "period": 1,
+                                "player": "17",
+                                "minutes": "1.5",
+                                "reason": "Подножка",
+                                "start": "11:47",
+                                "end": "13:17"
+                            }
+                        ]
+                    },
+                    "away": {
+                        "players": [
+                            {
+                                "number": "1",
+                                "name": "Семён Устинов",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "30",
+                                "name": "Денис Распопов",
+                                "position": "Вр"
+                            },
+                            {
+                                "number": "2",
+                                "name": "Илья Эрленбуш",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "3",
+                                "name": "Игорь Бушманов",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "4",
+                                "name": "Семён Коркин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "5",
+                                "name": "Андрей Колотыгин",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "6",
+                                "name": "Арсений Эрленбуш",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "7",
+                                "name": "Егор Сидорин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "8",
+                                "name": "Дмитрий Распопов",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "9",
+                                "name": "Михаил Аитов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "10",
+                                "name": "Дмитрий Бушманов",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "11",
+                                "name": "Семён Дмитриев",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "12",
+                                "name": "Матвей Суковатицын",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "13",
+                                "name": "Вадим Бабкин",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "14",
+                                "name": "Андрей Фомин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "15",
+                                "name": "Арсений Симахин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "17",
+                                "name": "Остап Чукреев",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "18",
+                                "name": "Дамир Ибрагимов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "19",
+                                "name": "Александр Тарасов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "21",
+                                "name": "Максим Чухманов",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "23",
+                                "name": "Андрей Некрасов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "31",
+                                "name": "Алексей Колотыгин",
+                                "position": "Нап"
+                            },
+                            {
+                                "number": "34",
+                                "name": "Никита Суханов",
+                                "position": "Защ"
+                            },
+                            {
+                                "number": "49",
+                                "name": "Кирилл Сидорин",
+                                "position": "Нап"
+                            }
+                        ],
+                        "playerStats": {
+                            "6": {
+                                "goals": 0,
+                                "assists": 0,
+                                "points": 0,
+                                "pim": 1.5
+                            },
+                            "8": {
+                                "goals": 0,
+                                "assists": 1,
+                                "points": 1,
+                                "pim": 0
+                            },
+                            "11": {
+                                "goals": 1,
+                                "assists": 0,
+                                "points": 1,
+                                "pim": 0
+                            },
+                            "15": {
+                                "goals": 3,
+                                "assists": 0,
+                                "points": 3,
+                                "pim": 0
+                            },
+                            "23": {
+                                "goals": 0,
+                                "assists": 1,
+                                "points": 1,
+                                "pim": 0
+                            }
+                        },
+                        "goalieStats": {
+                            "1": {
+                                "saves": 25,
+                                "goalsAgainst": 3,
+                                "timeOnIce": 1800
+                            },
+                            "30": {
+                                "saves": 4,
+                                "goalsAgainst": 1,
+                                "timeOnIce": 1800
+                            }
+                        },
+                        "periodStats": {
+                            "1": {
+                                "scoreA": 1,
+                                "scoreB": 0,
+                                "penaltiesA": 3,
+                                "penaltiesB": 1.5
+                            },
+                            "2": {
+                                "scoreA": 2,
+                                "scoreB": 2,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            },
+                            "3": {
+                                "scoreA": 1,
+                                "scoreB": 2,
+                                "penaltiesA": 0,
+                                "penaltiesB": 0
+                            }
+                        },
+                        "goals": [
+                            {
+                                "time": "04:09",
+                                "period": 2,
+                                "scorer": "11",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "11:51",
+                                "period": 2,
+                                "scorer": "15",
+                                "assist1": "",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "01:39",
+                                "period": 3,
+                                "scorer": "15",
+                                "assist1": "8",
+                                "assist2": "",
+                                "situation": ""
+                            },
+                            {
+                                "time": "13:27",
+                                "period": 3,
+                                "scorer": "15",
+                                "assist1": "23",
+                                "assist2": "",
+                                "situation": ""
+                            }
+                        ],
+                        "penalties": [
+                            {
+                                "time": "07:49",
+                                "period": 1,
+                                "player": "6",
+                                "minutes": "1.5",
+                                "reason": "Подножка",
+                                "start": "07:49",
+                                "end": "09:19"
+                            }
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+]

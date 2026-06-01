@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Кубок — Личный кабинет</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/sport/css/crossover.css">
+  <link rel="stylesheet" href="/sport/css/style.css">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <div class="logo">
+      <a href="/"><img src="/images/logo.png" alt="Кубок"></a>
+    </div>
+    <div class="site-title">Кубок Юных Чемпионов</div>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">О Федерации</a>
+          <ul class="submenu">
+            <li><a href="/sport/article/9/">Цели и задачи</a></li>
+            <li><a href="/sport/article/8/">Контакты</a></li>
+            <li><a href="/sport/club/">Клубы</a></li>
+            </ul>
+        </li>
+        <li><a href="#">История</a>
+          <ul class="submenu">
+            <li><a href="/sport/list/5/">От года к году</a></li>
+            <li><a href="/sport/list/7/">Личности</a></li>
+          </ul>
+        </li>
+        <li><a href="/sport/competitions/">Соревнования</a></li>
+        <li><a href="/sport/list/1/">Новости</a></li>
+        <li><a href="#">Медиа</a>
+          <ul class="submenu">
+            <li><a href="/sport/albums/">Фото</a></li>
+            <li><a href="/sport/videos/">Видео</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Официально</a>
+          <ul class="submenu">
+            <li><a href="/sport/referees/">Судьи</a></li>
+            <li><a href="/sport/list/3/">Регламенты и документы</a></li>
+            <li><a href="/sport/list/6/">Постановления</a></li>
+            <li><a href="/sport/article/7/">Книга правил</a></li>
+          </ul>
+        </li>
+        <li><a href="/sport/apps/auth/">Личный кабинет</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="content">
+    <h1>Личный кабинет</h1>
+    <div class="auth-container">
+      <div class="auth-form login-form">
+        <h2>Вход</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="login-email">E-mail</label>
+            <input type="email" id="login-email" name="email" placeholder="example@mail.ru" required>
+          </div>
+          <div class="form-group">
+            <label for="login-password">Пароль</label>
+            <input type="password" id="login-password" name="password" placeholder="••••••••" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Войти</button>
+          <div class="auth-links">
+            <a href="#">Забыли пароль?</a>
+          </div>
+        </form>
+      </div>
+      <div class="auth-form register-form">
+        <h2>Регистрация</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="reg-name">ФИО</label>
+            <input type="text" id="reg-name" name="name" placeholder="Иванов Иван Иванович" required>
+          </div>
+          <div class="form-group">
+            <label for="reg-email">E-mail</label>
+            <input type="email" id="reg-email" name="email" placeholder="example@mail.ru" required>
+          </div>
+          <div class="form-group">
+            <label for="reg-password">Пароль</label>
+            <input type="password" id="reg-password" name="password" placeholder="••••••••" required>
+          </div>
+          <div class="form-group">
+            <label for="reg-confirm">Подтверждение пароля</label>
+            <input type="password" id="reg-confirm" name="confirm" placeholder="••••••••" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2026 Кубок Юных Чемпионов. Все права защищены.</p>
+  </footer>
+</div>
+<script src="/sport/static/jquery/jquery.min.js"></script>
+<script src="/sport/js/crossover.js"></script>
+<script src="/sport/js/sport.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

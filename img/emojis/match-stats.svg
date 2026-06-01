@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <rect width="100" height="100" rx="20" fill="#1A5F7A"/>
+  <!-- Пересекающиеся круги с процентами -->
+  <circle cx="40" cy="50" r="20" fill="none" stroke="#22A39F" stroke-width="4" stroke-dasharray="32 100" transform="rotate(-90 40 50)"/>
+  <circle cx="60" cy="50" r="20" fill="none" stroke="#F0F5F9" stroke-width="4" stroke-dasharray="18 100" stroke-dashoffset="-20" transform="rotate(-90 60 50)"/>
+  <text x="40" y="54" font-size="10" fill="#22A39F" text-anchor="middle" font-family="Arial">65%</text>
+  <text x="60" y="54" font-size="10" fill="#F0F5F9" text-anchor="middle" font-family="Arial">35%</text>
+  <!-- Ползунок владения -->
+  <rect x="25" y="75" width="50" height="6" rx="3" fill="#F0F5F9" opacity="0.3"/>
+  <rect x="25" y="75" width="32" height="6" rx="3" fill="#22A39F"/>
+</svg>
