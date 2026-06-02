@@ -724,7 +724,7 @@ $activeTab = isset($_GET['tab']) ? $_GET['tab'] : '';
             <?php foreach ($competitions as $c): ?>
               <a href="?id=<?= $c['id'] ?>" class="comp-card">
                 <h3><?= htmlspecialchars($c['name']) ?></h3>
-                <div class="meta"><?= htmlspecialchars($c['season'] ?? '') ?> <?= $c['type'] ? '· '.$c['type'] : '' ?></div>
+                <div class="meta"><?= htmlspecialchars($c['season'] ?? '') ?> <?= ($c['type'] ?? '') && $c['type'] !== 'regular' ? '· '.htmlspecialchars($c['type']) : '' ?></div>
                 <span class="badge badge-<?= $c['status'] ?? 'upcoming' ?>">
                   <?= ['active'=>'Активен','finished'=>'Завершён','upcoming'=>'Предстоящий'][$c['status'] ?? 'upcoming'] ?>
                 </span>
